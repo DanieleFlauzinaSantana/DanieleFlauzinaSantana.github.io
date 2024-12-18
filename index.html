@@ -5,153 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniele Flauzina Santana</title>
   <style>
-    /* Reset básico */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Estilo geral */
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #333;
       background-color: #f9f9f9;
+      line-height: 1.6;
     }
 
-    /* Cabeçalho */
     header {
-      background-color: #4CAF50;
-      padding: 30px;
+      background-color: #666;
+      padding: 20px;
       text-align: center;
       color: white;
+      border-radius: 8px 8px 0 0;
     }
 
     header h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 35px;
     }
 
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 10px;
-    }
-
-    /* Seção principal */
     section {
       display: flex;
       flex-wrap: wrap;
-      margin: 20px auto;
       max-width: 1000px;
-      background: #fff;
+      margin: 0 auto;
+      background: white;
       border: 1px solid #ddd;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 8px 8px;
     }
 
     nav {
-      flex: 1;
+      width: 30%;
+      background: #ccc;
       padding: 20px;
-      background: #eee;
       border-right: 1px solid #ddd;
     }
 
     nav ul {
-      list-style: none;
+      list-style-type: none;
+      padding: 0;
     }
 
     nav li {
       margin: 10px 0;
     }
 
-    nav a {
-      text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #2e7031;
-    }
-
     article {
-      flex: 2;
+      width: 70%;
       padding: 20px;
+      background-color: #f1f1f1;
     }
 
-    article h1 {
-      color: #4CAF50;
-      margin-top: 20px;
+    footer {
+      text-align: center;
+      background-color: #777;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #666;
       font-size: 24px;
-    }
-
-    article p {
       margin-bottom: 10px;
     }
 
-    /* Rodapé */
-    footer {
-      text-align: center;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 8px;
+    p {
+      margin-bottom: 10px;
     }
 
     /* Responsividade */
     @media (max-width: 768px) {
-      section {
-        flex-direction: column;
-      }
-
-      nav {
+      nav, article {
+        width: 100%;
         border-right: none;
-        border-bottom: 1px solid #ddd;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Título da página -->
+
+  <!-- Cabeçalho -->
   <header>
     <h2>Bem Vindos!</h2>
-    <img src="foto.jpg" alt="Foto de boas-vindas">
   </header>
 
   <!-- Conteúdo principal -->
   <section>
-    <!-- Navegação lateral -->
+    <!-- Menu lateral -->
     <nav>
       <ul>
         <li><a href="#">Quem sou</a></li>
-        <li><a href="#">Porque estou fazendo o curso Talento Tech</a></li>
-        <li><a href="#">O que é o Curso Talento Tech</a></li>
+        <li><a href="#">Porque estou Fazendo o curso Talento Tech</a></li>
+        <li><a href="#">O que É o Curso Talento Tech</a></li>
       </ul>
     </nav>
 
-    <!-- Conteúdo principal -->
+    <!-- Artigos -->
     <article>
       <h1>Quem sou</h1>
-      <p>Me chamo Daniele, tenho 37 anos e moro na cidade de Congonhinhas, minha cidade natal onde nasci no dia 11 de setembro.</p>
-      <p>Passei minha infância e parte da adolescência em Jundiaí do Sul, também localizada no interior do Paraná.</p>
+      <p>Me chamo Daniele, tenho 37 anos e moro na cidade de Congonhinhas, minha cidade natal onde nasci no dia 11 do mês de setembro.</p>
+      <p>Passei minha infância e uma parte da adolescência em Jundiaí do Sul, também localizada no interior do Paraná.</p>
 
-      <h1>Porque estou fazendo o curso Talento Tech</h1>
+      <h1>Porque estou Fazendo o curso Talento Tech</h1>
       <p>Estou realizando o Curso Talento Tech para expandir meus conhecimentos sobre programação de computadores.</p>
-      <p>A programação é uma área que vem crescendo muito rapidamente, necessitando de mão de obra especializada. Este curso pode me proporcionar o conhecimento necessário para ingressar nessa área.</p>
+      <p>A programação é uma área que vem crescendo com muita velocidade, necessitando de mão de obra especializada. O curso pode me proporcionar conhecimento nesta área.</p>
 
-      <h1>O que é o Curso Talento Tech</h1>
-      <p>O Talento Tech é uma iniciativa inovadora do Governo do Paraná, que visa capacitar estudantes em tecnologia e promover o desenvolvimento regional nas cidades paranaenses com baixo Índice de Desenvolvimento Humano (IDH).</p>
+      <h1>O que É o Curso Talento Tech</h1>
+      <p>Uma iniciativa inovadora do Governo do Paraná, que visa capacitar estudantes em tecnologia e promover o desenvolvimento regional nas cidades paranaenses com baixo Índice de Desenvolvimento Humano (IDH).</p>
       <p>Em parceria com universidades estaduais e empresas do setor tecnológico, o projeto prepara alunos para o mercado de trabalho, garantindo que pelo menos 50% dos formandos sejam contratados por empresas madrinhas participantes.</p>
     </article>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <p>© 2024 Daniele Flauzina Santana | Todos os direitos reservados</p>
+    <p>&copy; 2024 Daniele Flauzina Santana | Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>
